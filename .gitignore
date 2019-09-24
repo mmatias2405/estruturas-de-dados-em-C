@@ -1,2 +1,3 @@
 #ignorar arquivos java compilados
 *.class
+/.metadata/

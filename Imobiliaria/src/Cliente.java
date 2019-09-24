@@ -3,16 +3,16 @@ public class Cliente {
 	
 	private int id;
 	private String nome;
-	private String endereço;
+	private String endereco;
 	private String telefone;
 	private String RG;
 	private String CPF;
 	
 
-	public Cliente(String nome, String endereço, String telefone, String rG, String cPF) {
+	public Cliente(String nome, String endereco, String telefone, String rG, String cPF) {
 		this.id = 0;
 		this.nome = nome;
-		this.endereço = endereço;
+		this.endereco = endereco;
 		this.telefone = telefone;
 		RG = rG;
 		CPF = cPF;
@@ -34,7 +34,7 @@ public class Cliente {
 		int result = 1;
 		result = prime * result + ((CPF == null) ? 0 : CPF.hashCode());
 		result = prime * result + ((RG == null) ? 0 : RG.hashCode());
-		result = prime * result + ((endereço == null) ? 0 : endereço.hashCode());
+		result = prime * result + ((endereco == null) ? 0 : endereco.hashCode());
 		result = prime * result + id;
 		result = prime * result + ((nome == null) ? 0 : nome.hashCode());
 		result = prime * result + ((telefone == null) ? 0 : telefone.hashCode());
@@ -60,10 +60,10 @@ public class Cliente {
 				return false;
 		} else if (!RG.equals(other.RG))
 			return false;
-		if (endereço == null) {
-			if (other.endereço != null)
+		if (endereco == null) {
+			if (other.endereco != null)
 				return false;
-		} else if (!endereço.equals(other.endereço))
+		} else if (!endereco.equals(other.endereco))
 			return false;
 		if (id != other.id)
 			return false;
@@ -82,7 +82,7 @@ public class Cliente {
 
 	@Override
 	public String toString() {
-		return "[" + id + ", nome=" + nome + ", endereço=" + endereço + ", telefone=" + telefone + ", RG="
+		return "[" + id + ", nome=" + nome + ", endereço=" + endereco + ", telefone=" + telefone + ", RG="
 				+ RG + ", CPF=" + CPF + "]";
 	}
 	
