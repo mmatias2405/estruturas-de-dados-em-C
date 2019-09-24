@@ -82,7 +82,7 @@ public class Cliente {
 
 	@Override
 	public String toString() {
-		return "[" + id + ", nome=" + nome + ", endereço=" + endereco + ", telefone=" + telefone + ", RG="
+		return "[" + id + ", nome=" + nome + ", endereco=" + endereco + ", telefone=" + telefone + ", RG="
 				+ RG + ", CPF=" + CPF + "]";
 	}
 	
